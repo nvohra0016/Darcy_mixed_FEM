@@ -15,7 +15,11 @@ Here $\kappa$ [m $^2$ ] is the permeability of the medium (which may be heteroge
 The solver is implemented in [deal.II](https://dealii.org/). For more instructions on installation of deal.II, please follow the steps here: [https://dealii.org/current/readme.html](https://dealii.org/current/readme.html).
 
 # 2. Examples
-We consider $\Omega = (0, 1)^2$ [m $^2$ ]. The boundary pressure values are 1 [MPa] on $x = 0$ and 0 [Pa] on $x = 1$. On $y = 0$ and $y = 1$ we consider no flux conditions $q \cdot n = 0$. We also choose $f = 0$.
+We consider $\Omega = (0, 1)^2$ [m $^2$ ]. The boundary pressure values are 1 [MPa] on $x = 0$ and 0 [Pa] on $x = 1$. On $y = 0$ and $y = 1$ we consider no flux conditions $q \cdot n = 0$. We also choose $f = 0$. An illustration of the domain for the heterogeneous case is shown below.
+
+<div align="center">
+<img src='/Images/domain.png' width='350' height='350'>
+</div>
 
 A uniform grid with cell width $h = \frac{1}{200}$ [m] is chosen.
 
