@@ -1,6 +1,6 @@
 # 1. Mixed Finite Element Method for Darcy Equations
 
-We solve the system of equations
+We solve for pressure $p$ and flux $q$ using the system of equations
 
 $$
     q = -\frac{\kappa}{\mu} \nabla P,
@@ -16,6 +16,8 @@ The solver is implemented in [deal.II](https://dealii.org/). For more instructio
 
 # 2. Examples
 We consider $\Omega = (0, 1)^2$ [m $^2$ ]. The boundary pressure values are 1 [MPa] on $x = 0$ and 0 [Pa] on $x = 1$. On $y = 0$ and $y = 1$ we consider no flux conditions $q \cdot n = 0$. We also choose $f = 0$.
+
+A uniform grid with cell width $h = \frac{1}{200}$ [m] is chosen.
 
 ## 2.1. Homogeneous Media
 
